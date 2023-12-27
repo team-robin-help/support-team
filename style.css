@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    font-size: 110%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+:root{
+    --blue : rgb(24, 186, 6);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn-a{
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 0.9rem;
+}
+h1{
+    font-size: 5rem;
+}
+
+
+/* NAVBAR SECTION */
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 7px black;
+    background-color: white;
+}
+.nav-logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+.nav-logo-box img{
+    width: 170px;
+}
+#navbar .btn-a{
+    background-color: var(--blue);
+    color: white;
+    transition: 0.4s;
+}
+#navbar .btn-a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* LANDING SECTION */
+.landing-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 6rem 3rem;
+    margin-top: 3rem;
+    color: white;
+    background-color: rgb(8, 166, 218);
+}
+.landing-btn-box{
+    margin-top: 2rem;
+}
+
+.landing-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
+}
+.landing-section-left p{
+    font-size: 14px;
+}
+.landing-section-left h1 span{
+    color: white;
+}
+.landing-section-right img{
+    width: 400px;
+}
+
+
+/* CARD SECTION */
+.card-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: rgb(232, 232, 232);
+    padding: 4rem 2rem;
+}
+.card{
+    background-color: white;
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    width: 200px;
+    height: 240px;
+}
+.card p{
+    font-size: 10px;
+}
+
+
+
+.logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+.logo-box img{
+    width: 250px;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width:1150px){
+    .landing-section-left h1{
+        font-size: 3rem;
+    }
+    .landing-section-left{
+        max-width: 400px;
+    }
+    .landing-section-right img{
+        width: 300px;
+    }
+}
+@media screen and (max-width:850px){
+    .landing-section-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.7rem;
+        width: 100%;
+    }
+    .landing-section-right img{
+        width: 400px;
+    }
+}
+@media screen and (max-width:700px){
+    .landing-section-right img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .input-field{
+        width: 300px;
+        font-size: 14px;
+    }
+    .landing-section-right img{
+        width: 240px;
+    }
+}
+@media screen and (max-width:400px) {
+    .landing-section h1{
+        font-size: 2rem;
+    }
+    #navbar .btn-a{
+        font-size: 12px;
+    }
+    #navbar .nav-logo-box{
+        gap: 0.3rem;
+    } 
+    #navbar{
+        padding: 1rem 1rem;
+    }
+}
